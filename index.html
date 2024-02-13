@@ -17,12 +17,12 @@
 
     <main class="">
         <!-- home screen -->
-        <section class="home min-h-screen hidden">
+        <section class="home min-h-screen ">
             <div class="flex flex-col justify-center text-center min-h-screen">
-                <div class="space-y-4">
-                    <h1 class="text-8xl">ALPHABET CLASH</h1>
+                <div class="space-y-10">
+                    <h1 class="text-8xl">ALPHABET CLASH PRO</h1>
                     <P>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</P>
-                    <button class="btn text-black">Play Now</button>
+                    <button onclick="play()" class="btn text-black">Play Now</button>
                 </div>
             </div>
 
@@ -30,7 +30,7 @@
 
         <!-- play ground -->
     
-        <section class="playGround">
+        <section class="playGround hidden">
            
             <div class="flex flex-col items-center gap-20 pt-20">
                 <!-- screen -->
@@ -98,12 +98,19 @@
                 </div>
             </div>
         </section>
+
+        <!-- score section -->
     
-        <section class="score">
-    
+        <section class="score flex flex-col justify-center items-center min-h-screen hidden">
+            <div class="text-center space-y-10 bg-[#5a5a5a69] p-5 rounded-lg">
+                <h1 class="text-8xl">Your Score : <span>12</span></h1>
+                <button class="btn">Play Again</button>
+                <p>Practice will make you pro</p>
+            </div>
         </section>
     </main>
 
+    <script src="scripts/alphaClash.js"></script>
 
 </body>
 
