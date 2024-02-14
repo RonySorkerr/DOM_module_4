@@ -8,4 +8,7 @@ function continueGame (){
     const alphabet = getRendomAlphabet();
     const currentAlphabetScreen = document.getElementById('currentAlphabet');
     currentAlphabetScreen.innerText = alphabet;
+
+    setBackgroundColor(alphabet);
 }
+

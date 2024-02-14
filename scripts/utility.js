@@ -22,3 +22,9 @@ function getRendomAlphabet (){
     return alphabet;
 
 }
+
+function setBackgroundColor(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-amber-400')
+
+}
