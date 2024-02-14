@@ -61,7 +61,13 @@ function keyboardHandler(keys) {
         console.log('right key pressed');
     }
     else {
-        console.log('you are wrong');
+        const remainingChances = document.getElementById('remainingLife');
+        const remainingChance = remainingChances.innerText;
+        const chances = parseInt(remainingChance);
+
+        const newChance = chances - 1;
+
+        remainingChances.innerText = newChance;
     }
 }
 
