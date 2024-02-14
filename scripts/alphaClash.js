@@ -1,3 +1,3 @@
 function play (){
-    console.log('function clicked');
+    hideElementById('home_screen')
 }
