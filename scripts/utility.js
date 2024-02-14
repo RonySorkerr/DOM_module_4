@@ -16,7 +16,7 @@ function getRendomAlphabet (){
     const index = Math.round(randomNumber);
 
     const alphabet = randomAlphabets[index];
-    console.log('alphabt is : ' ,alphabet);
+    console.log('alphabt to press : ' ,alphabet);
 
     // we have to return the value cause the user will need it
     return alphabet;
@@ -31,8 +31,21 @@ function setBackgroundColor(elementId){
 
 
 // keyboard event
-function keyboardHandler(){
-    console.log('key pressed')
+function keyboardHandler(keys){
+    const playerPressedKey = keys.key;
+    
+    const currentAlphabetElement =  document.getElementById('currentAlphabet');
+    const currentAlphabet = currentAlphabetElement.innerText;
+    const expectedAlphabet = currentAlphabet.toLowerCase();
+
+    console.log('expected is ' , playerPressedKey,  expectedAlphabet);
+
+    if(playerPressedKey === expectedAlphabet){
+        console.log('you got a point');
+    }
+    else{
+        console.log('you are wrong');
+    }
 }
 
 // keypressed
