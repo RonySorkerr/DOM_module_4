@@ -28,3 +28,12 @@ function setBackgroundColor(elementId){
     element.classList.add('bg-amber-400')
 
 }
+
+
+// keyboard event
+function keyboardHandler(){
+    console.log('key pressed')
+}
+
+// keypressed
+document.addEventListener('keyup', keyboardHandler);
