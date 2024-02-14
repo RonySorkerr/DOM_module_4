@@ -29,6 +29,10 @@ function setBackgroundColor(elementId){
 
 }
 
+function removeBackgroundColor(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-amber-400')
+}
 
 // keyboard event
 function keyboardHandler(keys){
@@ -41,7 +45,9 @@ function keyboardHandler(keys){
     console.log('expected is ' , playerPressedKey,  expectedAlphabet);
 
     if(playerPressedKey === expectedAlphabet){
-        console.log('you got a point');
+        removeBackgroundColor(playerPressedKey);
+        continueGame();
+        console.log('right key pressed');
     }
     else{
         console.log('you are wrong');
