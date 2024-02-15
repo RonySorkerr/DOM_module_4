@@ -48,6 +48,13 @@ function keyboardHandler(keys) {
         // console.log('right key pressed');
     }
     else {
+
+        const currentLife = getTextElementById('remainingLife');
+        const updatedLife = currentLife - 1;
+        set
+
+
+
         // const remainingChances = document.getElementById('remainingLife');
         // const remainingChance = remainingChances.innerText;
         // const chances = parseInt(remainingChance);
